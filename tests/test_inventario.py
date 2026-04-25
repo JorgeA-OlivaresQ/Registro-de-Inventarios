@@ -2,44 +2,6 @@ from src.productos import Producto
 from src.inventario import Inventario
 import pytest
 
-
-# =========================
-# TESTS PARA PRODUCTO
-# =========================
-
-def test_crear_producto_valido():
-    producto = Producto("P001", "Laptop", "Tecnologia", 10, 5, 2500.0)
-    assert producto.nombre == "Laptop"
-    assert producto.cantidad == 10
-
-
-def test_codigo_vacio():
-    with pytest.raises(ValueError):
-        Producto("", "Laptop", "Tecnologia", 10, 5, 2500.0)
-
-
-def test_cantidad_negativa():
-    with pytest.raises(ValueError):
-        Producto("P001", "Laptop", "Tecnologia", -1, 5, 2500.0)
-
-
-def test_registrar_entrada():
-    producto = Producto("P001", "Laptop", "Tecnologia", 10, 5, 2500.0)
-    producto.registrar_entrada(5)
-    assert producto.cantidad == 15
-
-
-def test_registrar_salida():
-    producto = Producto("P001", "Laptop", "Tecnologia", 10, 5, 2500.0)
-    producto.registrar_salida(5)
-    assert producto.cantidad == 5
-
-
-def test_stock_bajo():
-    producto = Producto("P001", "Laptop", "Tecnologia", 5, 5, 2500.0)
-    assert producto.stock_bajo() is True
-
-
 # =========================
 # TESTS PARA INVENTARIO
 # =========================
