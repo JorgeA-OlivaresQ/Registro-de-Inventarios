@@ -1,6 +1,6 @@
 class Producto:
     """
-    Representa un producto dentro del sistema de inventario.
+    Representa un producto dentro del sistema del inventario.
     """
 
     def __init__(self, codigo: str, nombre: str, categoria: str, cantidad: int, stock_minimo: int, precio: float):
