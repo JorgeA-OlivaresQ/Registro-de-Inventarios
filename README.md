@@ -23,4 +23,5 @@ Módulos del sistema
 8. Módulo de reportes: Permite generar reportes básicos del inventario, productos con bajo stock y movimientos realizados.
 9. Módulo de manejo de excepciones y validaciones: Controla errores del sistema y valida que los datos ingresados sean correctos.
 10. Módulo de administración: Permite gestionar usuarios, parámetros del sistema y configuraciones generales.
-
+## Actualización
+Se realizaron mejoras en la configuración de pruebas automatizadas (CI).
