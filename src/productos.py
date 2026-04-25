@@ -24,17 +24,19 @@ class Producto:
         self.stock_minimo = stock_minimo
         self.precio = precio
 
-    def registrar_entrada(self, cantidad: int) -> None:
+    def registrar_entrada(self, cantidad: int) -> int:
         if cantidad <= 0:
             raise ValueError("La cantidad de entrada debe ser mayor que cero.")
         self.cantidad += cantidad
+        return self.cantidad  # 🔥 útil para tests
 
-    def registrar_salida(self, cantidad: int) -> None:
+    def registrar_salida(self, cantidad: int) -> int:
         if cantidad <= 0:
             raise ValueError("La cantidad de salida debe ser mayor que cero.")
         if cantidad > self.cantidad:
             raise ValueError("No hay suficiente stock para realizar la salida.")
         self.cantidad -= cantidad
+        return self.cantidad  # 🔥 útil para tests
 
     def stock_bajo(self) -> bool:
         return self.cantidad <= self.stock_minimo
