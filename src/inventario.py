@@ -1,4 +1,4 @@
-from scr.productos import Producto
+from src.productos import Producto
 
 
 class Inventario:
