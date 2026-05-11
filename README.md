@@ -25,3 +25,6 @@ Módulos del sistema
 10. Módulo de administración: Permite gestionar usuarios, parámetros del sistema y configuraciones generales.
 ## Actualización
 Se realizaron mejoras en la configuración de pruebas automatizadas (CI).
+
+## Interfaz de la propuesta de solución
+(<Captura de pantalla de la plataforma web-1.png>)
