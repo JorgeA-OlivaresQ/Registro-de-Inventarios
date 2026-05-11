@@ -27,4 +27,4 @@ Módulos del sistema
 Se realizaron mejoras en la configuración de pruebas automatizadas (CI).
 
 ## Interfaz de la propuesta de solución
-(<Captura de pantalla de la plataforma web-1.png>)
+![alt text](<Captura de pantalla de la plataforma web-2.png>)
